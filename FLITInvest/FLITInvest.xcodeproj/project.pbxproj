@@ -1,0 +1,1006 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43E45C5BB2A282B4E3A2CBEB /* Pods_FLITInvest_FLITInvestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B257167350D442B3B4877A3 /* Pods_FLITInvest_FLITInvestUITests.framework */; };
+		9CC4F4DCE37575964D651EA7 /* Pods_FLITInvestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7079F26461DF97C334872C13 /* Pods_FLITInvestTests.framework */; };
+		DB1F992C26D7FB53005A5017 /* FLITRegisterChooseBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F992B26D7FB53005A5017 /* FLITRegisterChooseBankViewController.swift */; };
+		DB1F993126D7FB9F005A5017 /* FLITRegisterBankInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F993026D7FB9F005A5017 /* FLITRegisterBankInfoViewController.swift */; };
+		DB1F993626D7FBCF005A5017 /* FLITRegisterConfirmPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F993526D7FBCF005A5017 /* FLITRegisterConfirmPortfolioViewController.swift */; };
+		DB207DFF26E73B3D0018A1BA /* FLITPortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB207DFE26E73B3D0018A1BA /* FLITPortfolioTableViewCell.swift */; };
+		DB207E0426E73F030018A1BA /* FLITPortfolioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB207E0326E73F030018A1BA /* FLITPortfolioModel.swift */; };
+		DB207E0926E740C70018A1BA /* FLITPortfolioTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB207E0826E740C70018A1BA /* FLITPortfolioTwoTableViewCell.swift */; };
+		DB207E0E26E74E600018A1BA /* FLITRegisterConfirmPortfolioTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB207E0D26E74E600018A1BA /* FLITRegisterConfirmPortfolioTwoViewController.swift */; };
+		DB2DDE4826AE253B00413F28 /* FLITLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DDE4426AE253B00413F28 /* FLITLoginViewController.swift */; };
+		DB2DDE4926AE253B00413F28 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DDE4626AE253B00413F28 /* AuthManager.swift */; };
+		DB2DDE4A26AE253B00413F28 /* FLITRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DDE4726AE253B00413F28 /* FLITRegistrationViewController.swift */; };
+		DB2DDE5226AE258500413F28 /* FLITUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DDE4E26AE258400413F28 /* FLITUtilities.swift */; };
+		DB2DDE5326AE258500413F28 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DDE4F26AE258500413F28 /* Extensions.swift */; };
+		DB2DDE5426AE258500413F28 /* FLITUIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DDE5026AE258500413F28 /* FLITUIConfig.swift */; };
+		DB2DDE5526AE258500413F28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DDE5126AE258500413F28 /* Constants.swift */; };
+		DB2DDE5D26AE25FB00413F28 /* FLITNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DDE5C26AE25FB00413F28 /* FLITNetworking.swift */; };
+		DB31C2E226D028AC009B14FF /* FLITCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31C2E126D028AC009B14FF /* FLITCheckButton.swift */; };
+		DB5282F53A9A5F5C19E537C7 /* Pods_FLITInvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C99BED365B4137DC740D8 /* Pods_FLITInvest.framework */; };
+		DB624D1726DF056E00446246 /* PortforlioChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB624D1626DF056E00446246 /* PortforlioChartView.swift */; };
+		DB624D1F26DF058100446246 /* PortfolioCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB624D1E26DF058100446246 /* PortfolioCircleView.swift */; };
+		DB68791226D03FE20039A603 /* FLITRegistrationViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68791126D03FE10039A603 /* FLITRegistrationViewControllerThree.swift */; };
+		DB7DCF7A26D1AB1B00419231 /* FLITRegistrationViewControllerFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7DCF7926D1AB1B00419231 /* FLITRegistrationViewControllerFour.swift */; };
+		DB7DCF8526D1AB2800419231 /* FLITRegistrationViewControllerFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7DCF8426D1AB2800419231 /* FLITRegistrationViewControllerFive.swift */; };
+		DB7DCF8A26D1AD2400419231 /* FLITRegistrationBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7DCF8926D1AD2400419231 /* FLITRegistrationBaseViewController.swift */; };
+		DB7DCFAA26D1D21800419231 /* FLITLoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7DCFA926D1D21800419231 /* FLITLoginError.swift */; };
+		DB80AE7126E841F60079468A /* FLITRegisterPortfolioChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB80AE7026E841F60079468A /* FLITRegisterPortfolioChartViewController.swift */; };
+		DB80AE7626E842180079468A /* FLITPortfolioChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB80AE7526E842180079468A /* FLITPortfolioChartView.swift */; };
+		DB8D69D426CC2BCE00706533 /* FLITRequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D69D326CC2BCE00706533 /* FLITRequestClient.swift */; };
+		DB8D69D926CC50C900706533 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D69D826CC50C900706533 /* API.swift */; };
+		DB8D69DE26CC535800706533 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D69DD26CC535800706533 /* TokenManager.swift */; };
+		DB8FE0B926AE280000102185 /* FLITHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FE0B826AE280000102185 /* FLITHomeViewController.swift */; };
+		DB8FE0C126AE2AAE00102185 /* AuthKeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FE0C026AE2AAE00102185 /* AuthKeyChainManager.swift */; };
+		DB98895126CEF67F00116EF0 /* FLITRegistrationViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98895026CEF67F00116EF0 /* FLITRegistrationViewControllerTwo.swift */; };
+		DBB4DB4C26CEFEC6005FE0AD /* FLITLoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4DB4B26CEFEC6005FE0AD /* FLITLoginTextField.swift */; };
+		DBB9E29926AE1BF1005E462E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9E29826AE1BF1005E462E /* AppDelegate.swift */; };
+		DBB9E29B26AE1BF1005E462E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9E29A26AE1BF1005E462E /* SceneDelegate.swift */; };
+		DBB9E2A026AE1BF1005E462E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB9E29E26AE1BF1005E462E /* Main.storyboard */; };
+		DBB9E2A226AE1BF3005E462E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB9E2A126AE1BF3005E462E /* Assets.xcassets */; };
+		DBB9E2A526AE1BF3005E462E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB9E2A326AE1BF3005E462E /* LaunchScreen.storyboard */; };
+		DBB9E2B026AE1BF3005E462E /* FLITInvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9E2AF26AE1BF3005E462E /* FLITInvestTests.swift */; };
+		DBB9E2BB26AE1BF3005E462E /* FLITInvestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9E2BA26AE1BF3005E462E /* FLITInvestUITests.swift */; };
+		DBCBA5AF26D99CE500E79A5A /* FLITRegisterBankListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCBA5AE26D99CE500E79A5A /* FLITRegisterBankListTableViewCell.swift */; };
+		DBCBA5B726D9CE6500E79A5A /* FLITRegisterBankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCBA5B626D9CE6500E79A5A /* FLITRegisterBankModel.swift */; };
+		DBCCCCB826EF353E00441074 /* FLITRegisterConfirmPortfolioLastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCCCB726EF353E00441074 /* FLITRegisterConfirmPortfolioLastViewController.swift */; };
+		DBDEF94426AE8A07004F0AAF /* FLITRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDEF94326AE8A07004F0AAF /* FLITRequestManager.swift */; };
+		DBE478DC26C33FD3000CBB8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBE478DB26C33FD3000CBB8C /* GoogleService-Info.plist */; };
+		DBEFFA6626CE264100561C34 /* FLITPhoneLoginTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFFA6526CE264100561C34 /* FLITPhoneLoginTextFiled.swift */; };
+		DBEFFA6B26CE2DAD00561C34 /* FLITPhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFFA6A26CE2DAD00561C34 /* FLITPhoneAuthViewController.swift */; };
+		DBEFFA7326CE414800561C34 /* FLITPhoneInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFFA7226CE414800561C34 /* FLITPhoneInputViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBB9E2AC26AE1BF3005E462E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBB9E28D26AE1BF1005E462E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBB9E29426AE1BF1005E462E;
+			remoteInfo = FLITInvest;
+		};
+		DBB9E2B726AE1BF3005E462E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBB9E28D26AE1BF1005E462E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBB9E29426AE1BF1005E462E;
+			remoteInfo = FLITInvest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		614988C39C20D249864FF938 /* Pods-FLITInvest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLITInvest.debug.xcconfig"; path = "Target Support Files/Pods-FLITInvest/Pods-FLITInvest.debug.xcconfig"; sourceTree = "<group>"; };
+		6B257167350D442B3B4877A3 /* Pods_FLITInvest_FLITInvestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLITInvest_FLITInvestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7079F26461DF97C334872C13 /* Pods_FLITInvestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLITInvestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		992289C87FAB516DBE492F88 /* Pods-FLITInvestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLITInvestTests.release.xcconfig"; path = "Target Support Files/Pods-FLITInvestTests/Pods-FLITInvestTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C0C99BED365B4137DC740D8 /* Pods_FLITInvest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLITInvest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A217964BAB468504F5469D46 /* Pods-FLITInvest-FLITInvestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLITInvest-FLITInvestUITests.debug.xcconfig"; path = "Target Support Files/Pods-FLITInvest-FLITInvestUITests/Pods-FLITInvest-FLITInvestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA691D8B4ADD5D0D08AF4E7B /* Pods-FLITInvestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLITInvestTests.debug.xcconfig"; path = "Target Support Files/Pods-FLITInvestTests/Pods-FLITInvestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8B5024D332BFB1DF2764533 /* Pods-FLITInvest-FLITInvestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLITInvest-FLITInvestUITests.release.xcconfig"; path = "Target Support Files/Pods-FLITInvest-FLITInvestUITests/Pods-FLITInvest-FLITInvestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D9BCDD21DD1A70940F955AC2 /* Pods-FLITInvest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLITInvest.release.xcconfig"; path = "Target Support Files/Pods-FLITInvest/Pods-FLITInvest.release.xcconfig"; sourceTree = "<group>"; };
+		DB1F992B26D7FB53005A5017 /* FLITRegisterChooseBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegisterChooseBankViewController.swift; sourceTree = "<group>"; };
+		DB1F993026D7FB9F005A5017 /* FLITRegisterBankInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegisterBankInfoViewController.swift; sourceTree = "<group>"; };
+		DB1F993526D7FBCF005A5017 /* FLITRegisterConfirmPortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegisterConfirmPortfolioViewController.swift; sourceTree = "<group>"; };
+		DB207DFE26E73B3D0018A1BA /* FLITPortfolioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITPortfolioTableViewCell.swift; sourceTree = "<group>"; };
+		DB207E0326E73F030018A1BA /* FLITPortfolioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITPortfolioModel.swift; sourceTree = "<group>"; };
+		DB207E0826E740C70018A1BA /* FLITPortfolioTwoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITPortfolioTwoTableViewCell.swift; sourceTree = "<group>"; };
+		DB207E0D26E74E600018A1BA /* FLITRegisterConfirmPortfolioTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegisterConfirmPortfolioTwoViewController.swift; sourceTree = "<group>"; };
+		DB2DDE4426AE253B00413F28 /* FLITLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLITLoginViewController.swift; sourceTree = "<group>"; };
+		DB2DDE4626AE253B00413F28 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		DB2DDE4726AE253B00413F28 /* FLITRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLITRegistrationViewController.swift; sourceTree = "<group>"; };
+		DB2DDE4E26AE258400413F28 /* FLITUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLITUtilities.swift; sourceTree = "<group>"; };
+		DB2DDE4F26AE258500413F28 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DB2DDE5026AE258500413F28 /* FLITUIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLITUIConfig.swift; sourceTree = "<group>"; };
+		DB2DDE5126AE258500413F28 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB2DDE5C26AE25FB00413F28 /* FLITNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITNetworking.swift; sourceTree = "<group>"; };
+		DB31C2E126D028AC009B14FF /* FLITCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITCheckButton.swift; sourceTree = "<group>"; };
+		DB624D1626DF056E00446246 /* PortforlioChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortforlioChartView.swift; sourceTree = "<group>"; };
+		DB624D1E26DF058100446246 /* PortfolioCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCircleView.swift; sourceTree = "<group>"; };
+		DB68791126D03FE10039A603 /* FLITRegistrationViewControllerThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegistrationViewControllerThree.swift; sourceTree = "<group>"; };
+		DB7DCF7926D1AB1B00419231 /* FLITRegistrationViewControllerFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegistrationViewControllerFour.swift; sourceTree = "<group>"; };
+		DB7DCF8426D1AB2800419231 /* FLITRegistrationViewControllerFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegistrationViewControllerFive.swift; sourceTree = "<group>"; };
+		DB7DCF8926D1AD2400419231 /* FLITRegistrationBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegistrationBaseViewController.swift; sourceTree = "<group>"; };
+		DB7DCFA926D1D21800419231 /* FLITLoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITLoginError.swift; sourceTree = "<group>"; };
+		DB80AE7026E841F60079468A /* FLITRegisterPortfolioChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegisterPortfolioChartViewController.swift; sourceTree = "<group>"; };
+		DB80AE7526E842180079468A /* FLITPortfolioChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITPortfolioChartView.swift; sourceTree = "<group>"; };
+		DB8D69D326CC2BCE00706533 /* FLITRequestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRequestClient.swift; sourceTree = "<group>"; };
+		DB8D69D826CC50C900706533 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		DB8D69DD26CC535800706533 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		DB8FE0B826AE280000102185 /* FLITHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITHomeViewController.swift; sourceTree = "<group>"; };
+		DB8FE0C026AE2AAE00102185 /* AuthKeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeyChainManager.swift; sourceTree = "<group>"; };
+		DB98895026CEF67F00116EF0 /* FLITRegistrationViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegistrationViewControllerTwo.swift; sourceTree = "<group>"; };
+		DBB4DB4B26CEFEC6005FE0AD /* FLITLoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITLoginTextField.swift; sourceTree = "<group>"; };
+		DBB9E29526AE1BF1005E462E /* FLITInvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLITInvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB9E29826AE1BF1005E462E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBB9E29A26AE1BF1005E462E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DBB9E29F26AE1BF1005E462E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBB9E2A126AE1BF3005E462E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBB9E2A426AE1BF3005E462E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBB9E2A626AE1BF3005E462E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB9E2AB26AE1BF3005E462E /* FLITInvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLITInvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB9E2AF26AE1BF3005E462E /* FLITInvestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITInvestTests.swift; sourceTree = "<group>"; };
+		DBB9E2B126AE1BF3005E462E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB9E2B626AE1BF3005E462E /* FLITInvestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLITInvestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB9E2BA26AE1BF3005E462E /* FLITInvestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITInvestUITests.swift; sourceTree = "<group>"; };
+		DBB9E2BC26AE1BF3005E462E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBCBA5AE26D99CE500E79A5A /* FLITRegisterBankListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegisterBankListTableViewCell.swift; sourceTree = "<group>"; };
+		DBCBA5B626D9CE6500E79A5A /* FLITRegisterBankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegisterBankModel.swift; sourceTree = "<group>"; };
+		DBCCCCB726EF353E00441074 /* FLITRegisterConfirmPortfolioLastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRegisterConfirmPortfolioLastViewController.swift; sourceTree = "<group>"; };
+		DBD189B726CD7CB7000312A1 /* FLITInvest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FLITInvest.entitlements; sourceTree = "<group>"; };
+		DBDEF94326AE8A07004F0AAF /* FLITRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITRequestManager.swift; sourceTree = "<group>"; };
+		DBE478DB26C33FD3000CBB8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBEFFA6526CE264100561C34 /* FLITPhoneLoginTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITPhoneLoginTextFiled.swift; sourceTree = "<group>"; };
+		DBEFFA6A26CE2DAD00561C34 /* FLITPhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITPhoneAuthViewController.swift; sourceTree = "<group>"; };
+		DBEFFA7226CE414800561C34 /* FLITPhoneInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLITPhoneInputViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBB9E29226AE1BF1005E462E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5282F53A9A5F5C19E537C7 /* Pods_FLITInvest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB9E2A826AE1BF3005E462E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC4F4DCE37575964D651EA7 /* Pods_FLITInvestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB9E2B326AE1BF3005E462E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E45C5BB2A282B4E3A2CBEB /* Pods_FLITInvest_FLITInvestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23D26DBE70479B66BB609978 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C99BED365B4137DC740D8 /* Pods_FLITInvest.framework */,
+				6B257167350D442B3B4877A3 /* Pods_FLITInvest_FLITInvestUITests.framework */,
+				7079F26461DF97C334872C13 /* Pods_FLITInvestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADD446D3560BCA272EF68B5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				614988C39C20D249864FF938 /* Pods-FLITInvest.debug.xcconfig */,
+				D9BCDD21DD1A70940F955AC2 /* Pods-FLITInvest.release.xcconfig */,
+				A217964BAB468504F5469D46 /* Pods-FLITInvest-FLITInvestUITests.debug.xcconfig */,
+				D8B5024D332BFB1DF2764533 /* Pods-FLITInvest-FLITInvestUITests.release.xcconfig */,
+				BA691D8B4ADD5D0D08AF4E7B /* Pods-FLITInvestTests.debug.xcconfig */,
+				992289C87FAB516DBE492F88 /* Pods-FLITInvestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB1F993A26D8007D005A5017 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DBCBA5AE26D99CE500E79A5A /* FLITRegisterBankListTableViewCell.swift */,
+				DB207DFE26E73B3D0018A1BA /* FLITPortfolioTableViewCell.swift */,
+				DB207E0826E740C70018A1BA /* FLITPortfolioTwoTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DB2DDE3A26AE236600413F28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBCBA5B626D9CE6500E79A5A /* FLITRegisterBankModel.swift */,
+				DB207E0326E73F030018A1BA /* FLITPortfolioModel.swift */,
+			);
+			path = Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		DB2DDE3B26AE236600413F28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB624D1526DF052400446246 /* Graphic */,
+				DB1F993A26D8007D005A5017 /* Cell */,
+				DBEFFA6526CE264100561C34 /* FLITPhoneLoginTextFiled.swift */,
+				DBEFFA7226CE414800561C34 /* FLITPhoneInputViewController.swift */,
+				DBB4DB4B26CEFEC6005FE0AD /* FLITLoginTextField.swift */,
+				DB31C2E126D028AC009B14FF /* FLITCheckButton.swift */,
+				DB7DCFA926D1D21800419231 /* FLITLoginError.swift */,
+			);
+			path = View;
+			sourceTree = SOURCE_ROOT;
+		};
+		DB2DDE3C26AE236600413F28 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DB2DDE4326AE253B00413F28 /* Auth */,
+				DB2DDE4226AE24F500413F28 /* Main */,
+			);
+			path = ViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		DB2DDE3D26AE237E00413F28 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				DBDEF91426AE7F83004F0AAF /* NetworkManager */,
+				DB2DDE4526AE253B00413F28 /* AuthManager */,
+				DB2DDE5126AE258500413F28 /* Constants.swift */,
+				DB2DDE4F26AE258500413F28 /* Extensions.swift */,
+				DB2DDE5026AE258500413F28 /* FLITUIConfig.swift */,
+				DB2DDE4E26AE258400413F28 /* FLITUtilities.swift */,
+				DBB9E29826AE1BF1005E462E /* AppDelegate.swift */,
+				DBB9E29A26AE1BF1005E462E /* SceneDelegate.swift */,
+				DB2DDE5C26AE25FB00413F28 /* FLITNetworking.swift */,
+			);
+			path = Resourses;
+			sourceTree = SOURCE_ROOT;
+		};
+		DB2DDE4226AE24F500413F28 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DB8FE0B826AE280000102185 /* FLITHomeViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DB2DDE4326AE253B00413F28 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DB7DCF7726D1AAA800419231 /* Register */,
+				DB2DDE4426AE253B00413F28 /* FLITLoginViewController.swift */,
+				DBEFFA6A26CE2DAD00561C34 /* FLITPhoneAuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		DB2DDE4526AE253B00413F28 /* AuthManager */ = {
+			isa = PBXGroup;
+			children = (
+				DB2DDE4626AE253B00413F28 /* AuthManager.swift */,
+				DB8FE0C026AE2AAE00102185 /* AuthKeyChainManager.swift */,
+				DB8D69D826CC50C900706533 /* API.swift */,
+				DB8D69DD26CC535800706533 /* TokenManager.swift */,
+			);
+			path = AuthManager;
+			sourceTree = "<group>";
+		};
+		DB624D1526DF052400446246 /* Graphic */ = {
+			isa = PBXGroup;
+			children = (
+				DB624D1626DF056E00446246 /* PortforlioChartView.swift */,
+				DB624D1E26DF058100446246 /* PortfolioCircleView.swift */,
+				DB80AE7526E842180079468A /* FLITPortfolioChartView.swift */,
+			);
+			path = Graphic;
+			sourceTree = "<group>";
+		};
+		DB7DCF7726D1AAA800419231 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DB2DDE4726AE253B00413F28 /* FLITRegistrationViewController.swift */,
+				DB98895026CEF67F00116EF0 /* FLITRegistrationViewControllerTwo.swift */,
+				DB68791126D03FE10039A603 /* FLITRegistrationViewControllerThree.swift */,
+				DB7DCF7926D1AB1B00419231 /* FLITRegistrationViewControllerFour.swift */,
+				DB7DCF8426D1AB2800419231 /* FLITRegistrationViewControllerFive.swift */,
+				DB7DCF8926D1AD2400419231 /* FLITRegistrationBaseViewController.swift */,
+				DB1F992B26D7FB53005A5017 /* FLITRegisterChooseBankViewController.swift */,
+				DB1F993026D7FB9F005A5017 /* FLITRegisterBankInfoViewController.swift */,
+				DB1F993526D7FBCF005A5017 /* FLITRegisterConfirmPortfolioViewController.swift */,
+				DB207E0D26E74E600018A1BA /* FLITRegisterConfirmPortfolioTwoViewController.swift */,
+				DB80AE7026E841F60079468A /* FLITRegisterPortfolioChartViewController.swift */,
+				DBCCCCB726EF353E00441074 /* FLITRegisterConfirmPortfolioLastViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		DBB9E28C26AE1BF1005E462E = {
+			isa = PBXGroup;
+			children = (
+				DBB9E29726AE1BF1005E462E /* FLITInvest */,
+				DBB9E2AE26AE1BF3005E462E /* FLITInvestTests */,
+				DBB9E2B926AE1BF3005E462E /* FLITInvestUITests */,
+				DBB9E29626AE1BF1005E462E /* Products */,
+				ADD446D3560BCA272EF68B5C /* Pods */,
+				23D26DBE70479B66BB609978 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBB9E29626AE1BF1005E462E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9E29526AE1BF1005E462E /* FLITInvest.app */,
+				DBB9E2AB26AE1BF3005E462E /* FLITInvestTests.xctest */,
+				DBB9E2B626AE1BF3005E462E /* FLITInvestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBB9E29726AE1BF1005E462E /* FLITInvest */ = {
+			isa = PBXGroup;
+			children = (
+				DBD189B726CD7CB7000312A1 /* FLITInvest.entitlements */,
+				DB2DDE3D26AE237E00413F28 /* Resourses */,
+				DB2DDE3A26AE236600413F28 /* Model */,
+				DB2DDE3B26AE236600413F28 /* View */,
+				DB2DDE3C26AE236600413F28 /* ViewController */,
+				DBB9E29E26AE1BF1005E462E /* Main.storyboard */,
+				DBB9E2A126AE1BF3005E462E /* Assets.xcassets */,
+				DBB9E2A326AE1BF3005E462E /* LaunchScreen.storyboard */,
+				DBB9E2A626AE1BF3005E462E /* Info.plist */,
+				DBE478DB26C33FD3000CBB8C /* GoogleService-Info.plist */,
+			);
+			path = FLITInvest;
+			sourceTree = "<group>";
+		};
+		DBB9E2AE26AE1BF3005E462E /* FLITInvestTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9E2AF26AE1BF3005E462E /* FLITInvestTests.swift */,
+				DBB9E2B126AE1BF3005E462E /* Info.plist */,
+			);
+			path = FLITInvestTests;
+			sourceTree = "<group>";
+		};
+		DBB9E2B926AE1BF3005E462E /* FLITInvestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9E2BA26AE1BF3005E462E /* FLITInvestUITests.swift */,
+				DBB9E2BC26AE1BF3005E462E /* Info.plist */,
+			);
+			path = FLITInvestUITests;
+			sourceTree = "<group>";
+		};
+		DBDEF91426AE7F83004F0AAF /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				DBDEF94326AE8A07004F0AAF /* FLITRequestManager.swift */,
+				DB8D69D326CC2BCE00706533 /* FLITRequestClient.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBB9E29426AE1BF1005E462E /* FLITInvest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB9E2BF26AE1BF3005E462E /* Build configuration list for PBXNativeTarget "FLITInvest" */;
+			buildPhases = (
+				3643CB7AF7BB84AF49221326 /* [CP] Check Pods Manifest.lock */,
+				DBB9E29126AE1BF1005E462E /* Sources */,
+				DBB9E29226AE1BF1005E462E /* Frameworks */,
+				DBB9E29326AE1BF1005E462E /* Resources */,
+				A7F949F5D435B960299863D4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLITInvest;
+			productName = FLITInvest;
+			productReference = DBB9E29526AE1BF1005E462E /* FLITInvest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBB9E2AA26AE1BF3005E462E /* FLITInvestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB9E2C226AE1BF3005E462E /* Build configuration list for PBXNativeTarget "FLITInvestTests" */;
+			buildPhases = (
+				4BFD5FF2238E4270B80E09D3 /* [CP] Check Pods Manifest.lock */,
+				DBB9E2A726AE1BF3005E462E /* Sources */,
+				DBB9E2A826AE1BF3005E462E /* Frameworks */,
+				DBB9E2A926AE1BF3005E462E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBB9E2AD26AE1BF3005E462E /* PBXTargetDependency */,
+			);
+			name = FLITInvestTests;
+			productName = FLITInvestTests;
+			productReference = DBB9E2AB26AE1BF3005E462E /* FLITInvestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBB9E2B526AE1BF3005E462E /* FLITInvestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB9E2C526AE1BF3005E462E /* Build configuration list for PBXNativeTarget "FLITInvestUITests" */;
+			buildPhases = (
+				ABA6E8104392B7BCC8732061 /* [CP] Check Pods Manifest.lock */,
+				DBB9E2B226AE1BF3005E462E /* Sources */,
+				DBB9E2B326AE1BF3005E462E /* Frameworks */,
+				DBB9E2B426AE1BF3005E462E /* Resources */,
+				285002D8C0E6578BA3F7D963 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBB9E2B826AE1BF3005E462E /* PBXTargetDependency */,
+			);
+			name = FLITInvestUITests;
+			productName = FLITInvestUITests;
+			productReference = DBB9E2B626AE1BF3005E462E /* FLITInvestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBB9E28D26AE1BF1005E462E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					DBB9E29426AE1BF1005E462E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					DBB9E2AA26AE1BF3005E462E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = DBB9E29426AE1BF1005E462E;
+					};
+					DBB9E2B526AE1BF3005E462E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = DBB9E29426AE1BF1005E462E;
+					};
+				};
+			};
+			buildConfigurationList = DBB9E29026AE1BF1005E462E /* Build configuration list for PBXProject "FLITInvest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBB9E28C26AE1BF1005E462E;
+			productRefGroup = DBB9E29626AE1BF1005E462E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBB9E29426AE1BF1005E462E /* FLITInvest */,
+				DBB9E2AA26AE1BF3005E462E /* FLITInvestTests */,
+				DBB9E2B526AE1BF3005E462E /* FLITInvestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBB9E29326AE1BF1005E462E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB9E2A526AE1BF3005E462E /* LaunchScreen.storyboard in Resources */,
+				DBE478DC26C33FD3000CBB8C /* GoogleService-Info.plist in Resources */,
+				DBB9E2A226AE1BF3005E462E /* Assets.xcassets in Resources */,
+				DBB9E2A026AE1BF1005E462E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB9E2A926AE1BF3005E462E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB9E2B426AE1BF3005E462E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		285002D8C0E6578BA3F7D963 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FLITInvest-FLITInvestUITests/Pods-FLITInvest-FLITInvestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FLITInvest-FLITInvestUITests/Pods-FLITInvest-FLITInvestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FLITInvest-FLITInvestUITests/Pods-FLITInvest-FLITInvestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3643CB7AF7BB84AF49221326 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLITInvest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BFD5FF2238E4270B80E09D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLITInvestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7F949F5D435B960299863D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FLITInvest/Pods-FLITInvest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FLITInvest/Pods-FLITInvest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FLITInvest/Pods-FLITInvest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA6E8104392B7BCC8732061 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLITInvest-FLITInvestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBB9E29126AE1BF1005E462E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7DCF7A26D1AB1B00419231 /* FLITRegistrationViewControllerFour.swift in Sources */,
+				DB624D1F26DF058100446246 /* PortfolioCircleView.swift in Sources */,
+				DBEFFA6626CE264100561C34 /* FLITPhoneLoginTextFiled.swift in Sources */,
+				DB2DDE5426AE258500413F28 /* FLITUIConfig.swift in Sources */,
+				DBEFFA6B26CE2DAD00561C34 /* FLITPhoneAuthViewController.swift in Sources */,
+				DB207E0426E73F030018A1BA /* FLITPortfolioModel.swift in Sources */,
+				DB8D69DE26CC535800706533 /* TokenManager.swift in Sources */,
+				DB1F992C26D7FB53005A5017 /* FLITRegisterChooseBankViewController.swift in Sources */,
+				DBB9E29926AE1BF1005E462E /* AppDelegate.swift in Sources */,
+				DB68791226D03FE20039A603 /* FLITRegistrationViewControllerThree.swift in Sources */,
+				DB207E0926E740C70018A1BA /* FLITPortfolioTwoTableViewCell.swift in Sources */,
+				DB624D1726DF056E00446246 /* PortforlioChartView.swift in Sources */,
+				DB2DDE5226AE258500413F28 /* FLITUtilities.swift in Sources */,
+				DB2DDE5D26AE25FB00413F28 /* FLITNetworking.swift in Sources */,
+				DB2DDE5326AE258500413F28 /* Extensions.swift in Sources */,
+				DBDEF94426AE8A07004F0AAF /* FLITRequestManager.swift in Sources */,
+				DB8FE0B926AE280000102185 /* FLITHomeViewController.swift in Sources */,
+				DB8D69D426CC2BCE00706533 /* FLITRequestClient.swift in Sources */,
+				DBB4DB4C26CEFEC6005FE0AD /* FLITLoginTextField.swift in Sources */,
+				DB2DDE5526AE258500413F28 /* Constants.swift in Sources */,
+				DBCBA5AF26D99CE500E79A5A /* FLITRegisterBankListTableViewCell.swift in Sources */,
+				DB1F993626D7FBCF005A5017 /* FLITRegisterConfirmPortfolioViewController.swift in Sources */,
+				DB1F993126D7FB9F005A5017 /* FLITRegisterBankInfoViewController.swift in Sources */,
+				DB207E0E26E74E600018A1BA /* FLITRegisterConfirmPortfolioTwoViewController.swift in Sources */,
+				DBB9E29B26AE1BF1005E462E /* SceneDelegate.swift in Sources */,
+				DB80AE7626E842180079468A /* FLITPortfolioChartView.swift in Sources */,
+				DB2DDE4826AE253B00413F28 /* FLITLoginViewController.swift in Sources */,
+				DB80AE7126E841F60079468A /* FLITRegisterPortfolioChartViewController.swift in Sources */,
+				DB8FE0C126AE2AAE00102185 /* AuthKeyChainManager.swift in Sources */,
+				DBEFFA7326CE414800561C34 /* FLITPhoneInputViewController.swift in Sources */,
+				DBCBA5B726D9CE6500E79A5A /* FLITRegisterBankModel.swift in Sources */,
+				DB7DCF8526D1AB2800419231 /* FLITRegistrationViewControllerFive.swift in Sources */,
+				DBCCCCB826EF353E00441074 /* FLITRegisterConfirmPortfolioLastViewController.swift in Sources */,
+				DB2DDE4A26AE253B00413F28 /* FLITRegistrationViewController.swift in Sources */,
+				DB98895126CEF67F00116EF0 /* FLITRegistrationViewControllerTwo.swift in Sources */,
+				DB8D69D926CC50C900706533 /* API.swift in Sources */,
+				DB207DFF26E73B3D0018A1BA /* FLITPortfolioTableViewCell.swift in Sources */,
+				DB7DCF8A26D1AD2400419231 /* FLITRegistrationBaseViewController.swift in Sources */,
+				DB2DDE4926AE253B00413F28 /* AuthManager.swift in Sources */,
+				DB31C2E226D028AC009B14FF /* FLITCheckButton.swift in Sources */,
+				DB7DCFAA26D1D21800419231 /* FLITLoginError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB9E2A726AE1BF3005E462E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB9E2B026AE1BF3005E462E /* FLITInvestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB9E2B226AE1BF3005E462E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB9E2BB26AE1BF3005E462E /* FLITInvestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBB9E2AD26AE1BF3005E462E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBB9E29426AE1BF1005E462E /* FLITInvest */;
+			targetProxy = DBB9E2AC26AE1BF3005E462E /* PBXContainerItemProxy */;
+		};
+		DBB9E2B826AE1BF3005E462E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBB9E29426AE1BF1005E462E /* FLITInvest */;
+			targetProxy = DBB9E2B726AE1BF3005E462E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBB9E29E26AE1BF1005E462E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBB9E29F26AE1BF1005E462E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBB9E2A326AE1BF3005E462E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBB9E2A426AE1BF3005E462E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBB9E2BD26AE1BF3005E462E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBB9E2BE26AE1BF3005E462E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBB9E2C026AE1BF3005E462E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614988C39C20D249864FF938 /* Pods-FLITInvest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FLITInvest/FLITInvest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39KK4N9CCU;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = FLITInvest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flit.FLITInvestment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBB9E2C126AE1BF3005E462E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9BCDD21DD1A70940F955AC2 /* Pods-FLITInvest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FLITInvest/FLITInvest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39KK4N9CCU;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = FLITInvest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flit.FLITInvestment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBB9E2C326AE1BF3005E462E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA691D8B4ADD5D0D08AF4E7B /* Pods-FLITInvestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39KK4N9CCU;
+				INFOPLIST_FILE = FLITInvestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JingDong.FLITInvestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLITInvest.app/FLITInvest";
+			};
+			name = Debug;
+		};
+		DBB9E2C426AE1BF3005E462E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 992289C87FAB516DBE492F88 /* Pods-FLITInvestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39KK4N9CCU;
+				INFOPLIST_FILE = FLITInvestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JingDong.FLITInvestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLITInvest.app/FLITInvest";
+			};
+			name = Release;
+		};
+		DBB9E2C626AE1BF3005E462E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A217964BAB468504F5469D46 /* Pods-FLITInvest-FLITInvestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39KK4N9CCU;
+				INFOPLIST_FILE = FLITInvestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JingDong.FLITInvestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FLITInvest;
+			};
+			name = Debug;
+		};
+		DBB9E2C726AE1BF3005E462E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B5024D332BFB1DF2764533 /* Pods-FLITInvest-FLITInvestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39KK4N9CCU;
+				INFOPLIST_FILE = FLITInvestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JingDong.FLITInvestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FLITInvest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBB9E29026AE1BF1005E462E /* Build configuration list for PBXProject "FLITInvest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB9E2BD26AE1BF3005E462E /* Debug */,
+				DBB9E2BE26AE1BF3005E462E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB9E2BF26AE1BF3005E462E /* Build configuration list for PBXNativeTarget "FLITInvest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB9E2C026AE1BF3005E462E /* Debug */,
+				DBB9E2C126AE1BF3005E462E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB9E2C226AE1BF3005E462E /* Build configuration list for PBXNativeTarget "FLITInvestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB9E2C326AE1BF3005E462E /* Debug */,
+				DBB9E2C426AE1BF3005E462E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB9E2C526AE1BF3005E462E /* Build configuration list for PBXNativeTarget "FLITInvestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB9E2C626AE1BF3005E462E /* Debug */,
+				DBB9E2C726AE1BF3005E462E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBB9E28D26AE1BF1005E462E /* Project object */;
+}
